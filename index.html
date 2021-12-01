@@ -9,10 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />   
 </head>
-<body>
+<body class="body">
     <header class="header">
+        <div class="container header-container">
         <nav class="header-navigation">
             <a class="header-logo link" lang="en" href=""><span class="span">Web</span>Studio</a>
             <ul class="header-list list">
@@ -21,17 +25,21 @@
                 <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="list">
+        <ul class="header-connect list">
           <li><a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <main class="main">
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <div class="container">
+            <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
             <button class="hero-btn" type="button">Заказать услугу</button>
+            </div>
         </section>
         <section class="benefits">
+            <div class="container">
             <ul class="benefits-list list">
                 <li class="benefits-item">
                     <h3 class="benefits-title">Внимание к деталям</h3>
@@ -50,46 +58,61 @@
                     <p class="benefits-after-title">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <section class="our-work">
+            <div class="container">
             <h2 class="our-work-title">Чем мы занимаемся</h2>
             <ul class="our-work-list list">
-                <li><img src="./img/hands_on_the_keyboard.jpg" alt="печатает на клавиатуре" width="370"></li>
-                <li><img src="./img/mobile_phone.jpg" alt="держит телефон" width="370"></li>
-                <li><img src="./img/tablet.jpg" alt="держит планшет" width="370"></li>
+                <li class="our-work-item"><img src="./img/hands_on_the_keyboard.jpg" alt="печатает на клавиатуре" width="370"></li>
+                <li class="our-work-item"><img src="./img/mobile_phone.jpg" alt="держит телефон" width="370"></li>
+                <li class="our-work-item"><img src="./img/tablet.jpg" alt="держит планшет" width="370"></li>
             </ul>
+            </div>
         </section>
         <section class="command">
+            <div class="container">
             <h2 class="command-title">Наша команда</h2>
             <ul class="command-list list">
                 <li class="command-item"><img src="./img/guy_in_red.jpg" alt="парень в крсном" width="270">
+                    <div class="command-item-content">
                     <h3 class="command-title3">Игорь Демьяненко</h3>
-                    <p class="command-after-title" lang="en">Product Designer</p> 
+                    <p class="command-after-title" lang="en">Product Designer</p>
+                    </div>
                 </li>
                 <li class="command-item"><img src="./img/female.jpg" alt="девушка" width="270">
+                    <div class="command-item-content">
                     <h3 class="command-title3">Ольга Репина</h3>
                     <p class="command-after-title" lang="en">Frontend Developer</p> 
+                    </div>
                 </li>
                 <li class="command-item"><img src="./img/guy_in_white.jpg" alt="парень в белом" width="270">
+                    <div class="command-item-content">
                     <h3 class="command-title3">Николай Тарасов</h3>
                     <p class="command-after-title" lang="en">Marketing</p> 
+                    </div>
                 </li>
                 <li class="command-item"><img src="./img/guy_in_black.jpg" alt="парень в черном" width="270">
+                    <div class="command-item-content">
                     <h3 class="command-title3">Михаил Ермаков</h3>
                     <p class="command-after-title" lang="en">UI Designer</p> 
+                    </div>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
      <footer class="footer">
-      <a class="footer-logo link" lang="en" href=""><span class="span">Web</span>Studio</a>
-        <address class="footer-address " id="footer-id">
-         <ul class="footer-list list">
-           <li class="footer-item"><a class="footer-link link" href="https://goo.gl/maps/TYgPxpcgYGsznrCRA" target="_blank" rel="noopener noroferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-           <li class="footer-item"><a class="footer-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-           <li class="footer-item"><a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-       </address>
+        <div class="container">
+          <a class="footer-logo link" lang="en" href=""><span class="span">Web</span>Studio</a>
+           <address class="footer-address " id="footer-id">
+            <ul class="footer-list list">
+             <li class="footer-item"><a class="footer-link link" href="https://goo.gl/maps/TYgPxpcgYGsznrCRA" target="_blank" rel="noopener noroferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+             <li class="footer-item"><a class="footer-link link" href="mailto:info@example.com">info@example.com</a></li>
+             <li class="footer-item"><a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+           </address>
+        </div>
      </footer>
 </body>
 </html>

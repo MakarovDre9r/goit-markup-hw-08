@@ -6,6 +6,37 @@
   --background-color: #2f303a;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -18,6 +49,13 @@ body {
 }
 
 /* ---------------header----------------- */
+
+.header {
+  background-color: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .header-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -25,6 +63,34 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 84px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-connect {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-item {
+  margin-right: 50px;
+}
+
+.header-item:last-child {
+  margin-right: 0;
 }
 
 .span {
@@ -63,6 +129,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin-left: 50px;
 }
 
 .header-tel:focus,
@@ -85,14 +152,18 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 40px;
 }
 
 .hero {
   background-color: var(--background-color);
+  flex-grow: 1;
+  padding-bottom: 215px;
+  padding-top: 195px;
 }
 
 .hero-btn {
-  font-family: Roboto;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -102,7 +173,12 @@ body {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-btn:focus,
@@ -112,6 +188,23 @@ body {
 
 /* ---------------benefits---------------- */
 
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.benefits {
+  padding-top: 89px;
+  padding-bottom: 94px;
+}
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -119,6 +212,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  margin-bottom: 10px;
 }
 
 .benefits-after-title {
@@ -131,6 +225,10 @@ body {
 
 /* ---------------our-work---------------- */
 
+.our-work {
+  padding-bottom: 94px;
+}
+
 .our-work-title {
   font-weight: 700;
   font-size: 36px;
@@ -138,12 +236,50 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  margin-bottom: 50px;
+}
+
+.our-work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.our-work-item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-right: 30px;
+}
+
+.our-work-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* --------------command----------------- */
 
+.command-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.command-item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-right: 30px;
+}
+
+.command-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.command-item-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .command {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .command-title {
@@ -163,6 +299,7 @@ body {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .command-after-title {
@@ -187,17 +324,15 @@ body {
 
 .footer {
   background-color: var(--background-color);
-}
-
-#footer-id {
   font-style: normal;
   text-decoration: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-link {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
@@ -205,13 +340,42 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-list {
+  margin-top: 20px;
+}
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
+.footer-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
 /* -------------------------------portfolio--------------------------------- */
 
 /* --------------main----------------- */
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-list-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.portfolio-items-button {
+  margin-right: 8px;
+}
+
+.portfolio-items-button:nth-last-child(1) {
+  margin-right: 0px;
+}
+
 .portfolio-button {
-  font-family: Roboto;
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -220,7 +384,11 @@ body {
   color: var(--main-title-color);
   background: #f5f4fa;
   border-radius: 4px;
-  cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-style: none;
 }
 
 .portfolio-button:focus,
@@ -233,6 +401,24 @@ body {
   border-radius: 4px;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.portfolio-items {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-items:nth-child(3n) {
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -240,6 +426,7 @@ body {
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--main-title-color);
+  margin-bottom: 4px;
 }
 
 .portfolio-after-title {
@@ -248,4 +435,12 @@ body {
   /* identical to box height, or 187% */
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.portfolio-box {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
