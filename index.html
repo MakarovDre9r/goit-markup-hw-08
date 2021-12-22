@@ -20,7 +20,7 @@
         <nav class="header-navigation">
             <a class="header-logo link" lang="en" href=""><span class="span">Web</span>Studio</a>
             <ul class="header-list">
-                <li class="header-item"><a href="./index.html" class="header-link link">Студия</a></li>
+                <li class="header-item"><a href="./index.html" class="header-link link current">Студия</a></li>
                 <li class="header-item"><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
                 <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
             </ul>
@@ -39,7 +39,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
-            <button class="hero-btn" type="button">Заказать услугу</button>
+            <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="section">
@@ -79,9 +79,9 @@
             <div class="container">
             <h2 class="our-work-title">Чем мы занимаемся</h2>
             <ul class="our-work-list">
-                <li class="our-work-item"><img src="./img/hands_on_the_keyboard.jpg" alt="печатает на клавиатуре" width="370"></li>
-                <li class="our-work-item"><img src="./img/mobile_phone.jpg" alt="держит телефон" width="370"></li>
-                <li class="our-work-item"><img src="./img/tablet.jpg" alt="держит планшет" width="370"></li>
+                <li class="our-work-item"><div class="our-work-box"><img src="./img/hands_on_the_keyboard.jpg" alt="печатает на клавиатуре" width="370"><p class="our-work-text text-1">Десктопные приложения</p></div></li>
+                <li class="our-work-item"><div class="our-work-box"><img src="./img/mobile_phone.jpg" alt="держит телефон" width="370"><p class="our-work-text text-2">Мобильные приложения</p></div></li>
+                <li class="our-work-item"><div class="our-work-box"><img src="./img/tablet.jpg" alt="держит планшет" width="370"><p class="our-work-text text-3">Дизайнерские решения</p></div></li>
             </ul>
             </div>
         </section>
@@ -188,12 +188,12 @@
             <div class="container">
                 <h2 class="regular-customers-title">Постоянные клиенты</h2>
                 <ul class="regular-customers-list">
-                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Client-1" ></use></svg></a></li>
-                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Client-2"></use></svg></a></li>
-                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Client-3"></use></svg></a></li>
-                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Client-4"></use></svg></a></li>
-                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Client-5"></use></svg></a></li>
-                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Client-6"></use></svg></a></li>
+                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Logo-6"></use></svg></a></li>
+                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Logo-1"></use></svg></a></li>
+                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Logo-2"></use></svg></a></li>
+                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Logo-3"></use></svg></a></li>
+                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Logo-4"></use></svg></a></li>
+                    <li class="regular-customers-item"><a href="" class="regular-customers-link"><svg class="regular-customers-icon" width="100" height="60"><use href="./img/icon3.svg#icon-Logo-5"></use></svg></a></li>
                 </ul>
                 
             </div>
@@ -234,5 +234,15 @@
            </div>
         </div>
      </footer>
+     <div class="backdrop is-hidden" data-modal>
+         <div class="modal">
+             <button type="button" class="modal-close" data-modal-close>
+                 <svg class="close-icon" width="18" height="18">
+                     <use href="img/icon3.svg#icon-close"></use>
+                 </svg>
+             </button>
+         </div>
+     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
