@@ -1,8 +1,11 @@
-.our-work {
+.section__no_padding_top {
   padding-top: 0px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
-.our-work__title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -12,12 +15,12 @@
   margin-bottom: 50px;
 }
 
-.our-work-list {
+.our-work {
   display: flex;
   flex-wrap: wrap;
 }
 
-.our-work-list__item {
+.our-work__item {
   flex-basis: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   &:nth-child(3n) {
@@ -25,11 +28,11 @@
   }
 }
 
-.our-work-list__box {
+.our-work__box {
   position: relative;
 }
 
-.our-work-list__text {
+.our-work__text {
   position: absolute;
   bottom: 0;
   left: 0;

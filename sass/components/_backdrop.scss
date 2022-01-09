@@ -7,14 +7,11 @@
   left: 0;
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  &.is-hidden .modal {
-    transform: scale(1.5);
-  }
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   border-radius: 5px;
   position: absolute;
@@ -22,6 +19,13 @@
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  .backdrop.is-hidden & {
+    transform: scale(1.5);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-close {
@@ -128,8 +132,8 @@
 }
 
 .modal-check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -150,6 +154,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
