@@ -14,7 +14,7 @@
   min-height: 609px;
   background-color: #ffffff;
   border-radius: 5px;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
@@ -25,6 +25,9 @@
   @media screen and (min-width: 1200px) {
     width: 528px;
     min-height: 581px;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
   }
 }
 
